@@ -19,3 +19,24 @@ console.log("bora".substring(0,2))
 console.log("bora".toUpperCase())
 console.log("bora".toLocaleUpperCase())
 console.log("bora".indexOf("o"))
+
+// function getBrand(brand){
+//     console.log(brand)
+//     return {
+//         brand: brand,
+//         website: `www.${brand}.com`
+//     }
+// }
+//Better way ot create function with conast key word that way no reassignment allowed for the function
+const getBrand = function (brand){
+    console.log(brand)
+    return {
+        brand: brand,
+        website: `www.${brand}.com`
+    }
+}
+
+const brand = getBrand("GM")
+console.log(brand)
+console.log("\n")
+console.log(JSON.stringify(brand, null, 1))
