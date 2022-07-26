@@ -1,4 +1,5 @@
-var person ={
+//objects
+const person ={
     firstName: "Bora",
     age: 21,
     isFemale: true,
@@ -7,6 +8,9 @@ var person ={
     address:{
         city: "London",
         postCode: "12345"
+    },
+    toString: function(){
+        return `Name: ${this.firstName} Age: ${this.age}`
     }
 }
 
@@ -23,4 +27,10 @@ console.log(Object.values(person))
 console.log(Object.keys(person))
 //in string form
 console.log(JSON.stringify(person))
+console.log("\n")
+console.log(person.toString())
+console.log("\n")
+//you can add a property to the object
+person.lastName="Smith"
 
+console.log(JSON.stringify(person))
