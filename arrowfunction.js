@@ -29,7 +29,8 @@ const getBrand2 =  (brand) => {
 
 const getBrand = brand => ({
         brand: brand,
-        website: `www.${brand.toLowerCase()}.com`}
+        website: `www.${brand.toLowerCase()}.com`
+    }
 )
 const brand = getBrand("GM")
 console.log(brand)

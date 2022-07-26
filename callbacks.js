@@ -20,3 +20,4 @@ greetUser("james", cb)
 greetUser("Bob", (username) =>{
     return "Good bye " + username
 })
+greetUser("james")
