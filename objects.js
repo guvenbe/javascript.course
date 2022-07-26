@@ -50,3 +50,28 @@ for(const p in person){
 console.log("===========================")
 console.log(Object.keys(person))
 console.log(Object.values(person))
+console.log("===========================")
+//const firstName = person.firstName
+//const age = person.age
+//const balance = person.balance
+
+//console.log(firstName)
+//console.log(age)
+//console.log(balance)
+
+//or
+console.log("===========================")
+const { 
+    firstName, 
+    firstName : name, 
+    age, 
+    balance,
+    //address : {city}
+    address : {city : town} //rename to town
+} = person
+console.log(firstName)
+console.log(name)
+console.log(age)
+console.log(balance)
+//console.log(city)
+console.log(town)
