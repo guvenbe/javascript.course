@@ -35,15 +35,29 @@ const address = new Promise((resolve, reject) => {
 // }
 //Instead use
 
+// const fetchData = async() =>{
+//         Promise.all([customers, address]).then(values =>{
+//            //console.log(values) //returns an array
+//            const[c, a] =values
+//            console.log(a)
+//            console.log(c)
+//         }).catch(err=>{
+//             console.log(err)
+//         })
+// }
+
 const fetchData = async() =>{
     try{
-        const c  = await customers;
-        const a  = await address;
+
+        //use this  getting a and c dont depend on each other and you run both async
+        const values = await Promise.all([customers, address]) //takes an array of proomises
+        const [c, a] = values
         console.log(c)
         console.log(a)
     }catch(error){
         console.log(error)
     }
 }
+
 
 fetchData();
