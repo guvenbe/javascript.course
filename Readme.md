@@ -6,3 +6,6 @@ For module add
 "type": "module",
 
 npm install -save axios
+
+Errors in JS
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors
