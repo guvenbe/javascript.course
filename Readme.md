@@ -34,3 +34,26 @@ https://yarnpkg.com/
 
 npm -i --dev-save
 or npm i -D jest
+
+To install jest globally
+npm i -g jest
+
+//run test
+npm test
+npm run test
+jest
+
+enable es6 style imports
+npm i -D @babel/plugin-transform-modules-commonjs
+
+in .babelrc
+
+{
+    "env": {
+        "test": {
+            "plugins": [
+                "@babel/plugin-transform-modules-commonjs"
+            ]
+        }
+    }
+}
