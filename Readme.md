@@ -31,3 +31,6 @@ npm run
 
 https://docs.npmjs.com/
 https://yarnpkg.com/
+
+npm -i --dev-save
+or npm i -D jest
