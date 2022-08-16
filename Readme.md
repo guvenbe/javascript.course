@@ -32,6 +32,9 @@ npm run
 https://docs.npmjs.com/
 https://yarnpkg.com/
 
+***********Testing
+https://jestjs.io/
+
 npm -i --dev-save
 or npm i -D jest
 
@@ -57,3 +60,28 @@ in .babelrc
         }
     }
 }
+
+
+************NodeExpress
+npm i -S express
+or npm install express --save
+
+
+*************React
+npx create-react-app react-frontend
+
+change the port
+create .env file
+inside .env
+PORT=5000
+
+npm start
+
+****Install axois
+npm -i -S axios
+
+useEffect run before rendering
+
+
+https://mui.com/
+npm install @mui/material @emotion/react @emotion/styled
