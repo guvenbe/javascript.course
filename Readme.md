@@ -45,6 +45,7 @@ npm i -g jest
 npm test
 npm run test
 jest
+jest -v
 
 enable es6 style imports
 npm i -D @babel/plugin-transform-modules-commonjs
